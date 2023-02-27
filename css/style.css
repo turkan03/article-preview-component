@@ -55,3 +55,77 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* GENERAL STYLES */
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.12;
+  background-color: var(--light-grayish-blue);
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 45.625rem;
+  border-radius: 10px;
+
+  display: flex;
+}
+
+.card__content {
+  padding: 2rem 2.5rem;
+}
+
+.card__img img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  /*use object-fit with height!*/
+}
+
+/* TYPOGRAPHY */
+
+.card__header {
+  margin-bottom: 0.75rem;
+}
+
+.card__text {
+  margin-bottom: 1.25rem;
+}
+
+/* USER */
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user__img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.user__img img {
+  border-radius: 50%;
+}
+
+.share__hidden {
+  display: none;
+}
