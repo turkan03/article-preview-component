@@ -67,6 +67,8 @@ body {
   background-color: var(--light-grayish-blue);
 }
 
+/* LAYOUT CARD AND CARD CONTENT*/
+
 .main {
   height: 100vh;
   display: flex;
@@ -86,6 +88,10 @@ body {
   padding: 2rem 2.5rem;
 }
 
+.card__img {
+  max-width: 17.8125rem;
+}
+
 .card__img img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -94,14 +100,28 @@ body {
   /*use object-fit with height!*/
 }
 
-/* TYPOGRAPHY */
-
 .card__header {
   margin-bottom: 0.75rem;
 }
 
 .card__text {
   margin-bottom: 1.25rem;
+}
+
+/* TYPOGRAPHY */
+.card__header {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.25px;
+}
+.card__header,
+.user__name {
+  color: var(--dark-grayish-blue);
+  font-weight: 700;
+}
+.card__text,
+.date {
+  color: var(--dark-blue);
 }
 
 /* USER */
@@ -124,6 +144,22 @@ body {
 
 .user__img img {
   border-radius: 50%;
+}
+
+/* SHARE SECTION */
+
+.share {
+  background-color: var(--light-grayish-blue);
+  padding: 0.625rem;
+  border-radius: 50%;
+}
+
+.share:hover {
+  background-color: var(--grayish-blue);
+}
+
+.share img:hover {
+  filter: invert(0);
 }
 
 .share__hidden {
