@@ -82,6 +82,7 @@ body {
   border-radius: 10px;
 
   display: flex;
+  position: relative;
 }
 
 .card__content {
@@ -148,20 +149,58 @@ body {
 
 /* SHARE SECTION */
 
-.share {
+.share:link,
+.share:visited {
   background-color: var(--light-grayish-blue);
   padding: 0.625rem;
   border-radius: 50%;
 }
 
-.share:hover {
-  background-color: var(--grayish-blue);
+.share:hover,
+.sare:active {
+  background-color: var(--dark-grayish-blue);
 }
 
-.share img:hover {
-  filter: invert(0);
+.share:hover path {
+  fill: #fff;
 }
 
 .share__hidden {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  top: 45%;
+  left: 75%;
+}
+
+.share__hidden {
+  background-color: var(--dark-grayish-blue);
+
+  display: flex;
+  gap: 1.3125rem;
+  padding: 1.0625rem 2.3125rem;
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+  border-radius: 10px;
+  position: relative;
+}
+
+.share__hidden::after {
+  content: " ";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--dark-grayish-blue);
+  transform: rotate(0.13turn);
+  position: absolute;
+  bottom: -12%;
+  left: 45%;
+}
+
+.share__text {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.25rem;
+}
+
+.share__icons {
+  display: flex;
+  gap: 1rem;
 }
